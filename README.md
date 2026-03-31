@@ -32,7 +32,31 @@ PROCEDURE:
 6.Verify the generated results
 
 PROGRAM:
+```
+clc;
+clear;
 
+
+X = [5 8 10 12 15];
+
+
+N = length(X);
+
+
+mean_value = sum(X) / N;
+
+
+variance_value = sum((X - mean_value).^2) / N;
+
+
+disp("Mean = ");
+disp(mean_value);
+
+disp("Variance = ");
+disp(variance_value);
+```
 OUTPUT GRAPH:
+<img width="918" height="671" alt="image" src="https://github.com/user-attachments/assets/20949312-f86d-4dce-ba1b-905235e8f597" />
 
 RESULT:
+Thus the mean , variance and cross correlation are executed in Scilab and output is verified
